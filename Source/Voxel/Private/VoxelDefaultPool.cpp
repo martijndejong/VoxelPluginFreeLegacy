@@ -17,6 +17,8 @@ FVoxelDefaultPool::FVoxelDefaultPool(
 		1024 * 1024,
 		EThreadPriority::TPri_Normal,
 		bConstantPriorities)))
+	, PriorityCategories{}
+	, PriorityOffsets{}
 {
 	for (int32 Index = 0; Index < 256; Index++)
 	{
